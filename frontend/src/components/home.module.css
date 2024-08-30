@@ -1,0 +1,130 @@
+.card {
+    border: 2px dashed lightgrey;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.uploadButton {
+    background-color: #4682B4;
+    border-color: #ADD8E6;
+    width: 100%; 
+    max-width: 230px;
+}
+
+.errorAlert {
+    margin-top: 1rem;
+}
+
+.detectedEmotionsTitle {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.tableBody {
+    max-height: 700px;
+    overflow-y: auto;
+    padding-left: 10px;
+}
+
+.emotionRow {
+    display: flex;
+    width: calc(33.333% - 5px);
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.emotionLabel {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.emotionConfidence {
+    flex: 0;
+    padding-right: 25px;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.emotionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding-left: 0;
+}
+
+.tableHeader th {
+    font-weight: bold; 
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.tableHeader th:nth-of-type(2) {
+    padding-left: 10px; 
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.highlighted {
+    background-color: #FFFFE0;
+}
+
+@media (max-width: 767.98px) {
+    .buttonWrapper {
+        justify-content: center !important; 
+        text-align: center !important;
+    }
+    .uploadButton {
+        width: 100% !important;
+    }
+
+    .emotionContainer {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    
+    .emotionRow {
+        display: flex;
+        width: 100%;
+    }
+    
+    .emotionLabel {
+        width: 150px;
+        text-align: left;
+    }
+    
+    .emotionConfidence {
+        text-align: right;
+        color: darkgray;
+        font-weight: bold;
+        width: 100%;
+    }
+
+    .tableBody {
+        max-height: 700px;
+        overflow-y: auto;
+    }
+    .detectedEmotionsTitle {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        text-align: left;
+    }    
+
+    .tableHeader th:nth-of-type(2) {
+        padding-left: 35px; 
+    }
+
+    .highlighted {
+        background-color: #FFFFE0 !important;
+        width: 100%;
+    }
+}
