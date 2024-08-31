@@ -44,7 +44,7 @@ The Emotion Recognition project is designed to analyze facial expressions in vid
 ## Results and Discussion
 
 ### User Interaction Screens
-![User Interaction Screen](./image/user_interaction_screen.png)
+![User Interaction Screen](./image/user.png)
 
 ### Results for Desktop View
 ![Results for Desktop View](./image/desktop_view.png)
